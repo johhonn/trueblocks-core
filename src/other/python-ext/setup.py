@@ -7,7 +7,7 @@ extension = Extension(name='_quickblocks',
         sources = ['extension.cpp'],
         language='c++',
         extra_compile_args = ['-std=c++11', '-Werror', '-Wall', '-O2', '-fPIC'],
-        extra_link_args = ['-L/usr/local/qblocks/lib', '-l../../libs/acct', '-l../../libs/ether', '-l../../libs/util', '-lcurl'])
+        extra_link_args = ['-L/usr/local/qblocks/lib', '-lcurl'])
 
 setup(name = 'QuickBlocks',
         version = '0.1.0',
